@@ -4,7 +4,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
 
-A User Management System and Blog API built with **Node.js**, **Express**, and **MySQL**. This project demonstrates clean architecture and secure authentication, showcasing practical backend development skills.
+A User Management System and Blog API built with **Node.js**, **Express**, and **MySQL**. This project demonstrates clean, modular, scalable architecture and secure authentication, showcasing practical backend development skills.
 
 ---
 
@@ -21,6 +21,7 @@ A User Management System and Blog API built with **Node.js**, **Express**, and *
 ---
 
 ## ✨ Key Features
+- **🧱 Modular Architecture**: Each domain (Auth, User, Blog) is its own module, so new features can be added without changing existing ones.
 - **🔐 Secure Authentication**: JWT-based login and registration with hashed passwords (`bcryptjs`).
 - **📧 Automated Emails**: Instant welcome emails sent upon user registration (`nodemailer`).
 - **🛡️ Data Validation**: Strict and secure input validation using `Joi`.
@@ -79,6 +80,8 @@ A User Management System and Blog API built with **Node.js**, **Express**, and *
 - `/src/utils`: Core utilities for standardizing responses and third-party interactions (`email_service`, `global_error`).
 - `/db`: Database connection pooling and Sequelize models.
 - `/docs`: Project documentation and API specifications.
+
+This separation of modules, middlewares, utilities, and database code keeps the project scalable and easy to maintain.
 
 <br>
 
